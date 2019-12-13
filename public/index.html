@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        .container {
+            height:30vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .list {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 50px;
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;            
+        }
+
+        li {
+            clear: both;
+            margin-top: 20px;
+            width: 800px;
+        }
+        
+        img {
+            width: 80px;
+            float: left;
+            margin-right: 10px;
+        }
+
+        strong {
+            font-size: 20px
+        }
+
+        p {
+            margin: 5px 0;
+        }
+
+        input {
+            height: 30px;
+            width: 260px;
+        }
+
+        button {
+            height: 37px;
+        }
+    </style>
+</head>
+<body >
+    <div class="container">
+        <form id="repo-form">
+            <img src="http://pngimg.com/uploads/github/github_PNG20.png" />
+            <p><h2>Buscar por repositórios no github</h2></p>
+            <input type="text" name="repository" placeholder="dualshockmaster/jogo-21-vue-js"> 
+            <button type="submit">Adicionar</button>
+        </form>
+    </div>
+    
+
+    <ul id="repo-list" class="list">
+        
+    </ul>
+    <script src="./bundle.js"></script>
+</body c>
+</html>
